@@ -48,7 +48,7 @@ variable instance_count {
   default = "1"
 }
 
-variable VPC_NAEME {
+variable VPC_NAME {
   default = "jprofile-VPC"
 }
 
