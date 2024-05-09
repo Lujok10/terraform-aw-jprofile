@@ -1,93 +1,93 @@
-variable AWS_REGION {
+variable "AWS_REGION" {
   default = "us-east-1"
 }
 
-variable AMIS {
-  type = map
+variable "AMIS" {
+  type = map(any)
   default = {
     us-east-1 = "ami-080e1f13689e07408"
-    us-east-1 = "ami-080e1f13689e07408"
-    us-east-1 = "ami-080e1f13689e07408"
+    us-east-2 = "ami-080e1f13689e07408"
+    us-east-2 = "ami-080e1f13689e07408"
   }
 
 }
 
-variable PRIV_KEY_PATH {
+variable "PRIV_KEY_PATH" {
   default = "jprofilekey"
 }
 
-variable PUB_KEY_PATH {
+variable "PUB_KEY_PATH" {
   default = "jprofilekey.pub"
 }
 
-variable USERNAME {
+variable "USERNAME" {
   default = "ubuntu"
 }
 
-variable MYIP {
+variable "MYIP" {
   default = "183.83.39.124/32"
 }
 
-variable rmquser {
+variable "rmquser" {
   default = "rabbit"
 }
 
-variable rmqpass {
+variable "rmqpass" {
   default = "GR33n@pple123456"
 }
 
-variable dbuser {
+variable "dbuser" {
   default = "admin123"
 }
 
-variable dbname {
+variable "dbname" {
   default = "accounts"
 }
 
-variable instance_count {
+variable "instance_count" {
   default = "1"
 }
 
-variable VPC_NAME {
+variable "VPC_NAME" {
   default = "jprofile-VPC"
 }
 
-variable Zone1 {
+variable "Zone1" {
   default = "us-east-2a"
 }
 
-variable Zone2 {
+variable "Zone2" {
   default = "us-east-2b"
 }
 
-variable Zone3 {
+variable "Zone3" {
   default = "us-east-2c"
 }
 
-variable VpcCIDR {
+variable "VpcCIDR" {
   default = "172.21.0.0/16"
 }
 
-variable PubSub1CIDR {
+variable "PubSub1CIDR" {
   default = "172.21.1.0/24"
 }
 
-variable PubSub2CIDR {
+variable "PubSub2CIDR" {
   default = "172.21.2.0/24"
 }
 
-variable PubSub3CIDR {
+variable "PubSub3CIDR" {
   default = "172.21.3.0/24"
 }
 
-variable PrivSub1CIDR {
+variable "PrivSub1CIDR" {
   default = "172.21.4.0/24"
 }
 
-variable PrivSub2CIDR {
+variable "PrivSub2CIDR" {
   default = "172.21.5.0/24"
 }
-variable PrivSub3CIDR {
+variable "PrivSub3CIDR" {
   default = "172.21.6.0/24"
 }
 
